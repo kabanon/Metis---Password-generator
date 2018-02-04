@@ -45,7 +45,7 @@
     "message": "Advices"
   },
   "AdviceContainer": {
-    "message": "<ul><li></li></ul>"
+    "message": ""
   },
   "OptionsLabel": {
     "message": "Options"

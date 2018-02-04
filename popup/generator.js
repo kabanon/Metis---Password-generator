@@ -319,13 +319,13 @@ var password = {
    * Translations
    */
   for (let [key, value] of Object.entries(i18n_text)){
-    document.getElementById(key).innerHTML = browser.i18n.getMessage(value);
+    let spani18n = document.createElement('span');
+    spani18n.textContent = browser.i18n.getMessage(value);
+    document.getElementById(key).appendChild(spani18n);
   }
   for (let [value, element] of Object.entries(i18n_placeholder)){
     document.getElementById(element).setAttribute('placeholder', browser.i18n.getMessage(value));
   }
   document.getElementById('generate_submit').setAttribute('value', browser.i18n.getMessage('Submit'));
-
-
 
 })(browser, password);
