@@ -1,0 +1,53 @@
+{
+  "extensionName": {
+    "message": "Metis (Μῆτις) - Générateur de mot de passe"
+  },
+  "extensionDescription": {
+    "message": "Metis (Μῆτις) est un générateur de mot de passe. Il vous permet a partir d'une clé unique d'avoir un mot de passe unique et sécurisé pour chaque site internet."
+  },
+  "Title": {
+    "message": "Metis (Μῆτις)"
+  },
+  "PassphraseLabel": {
+    "message": "Phrase secrète :"
+  },
+  "PassphraseLabelPlaceholder": {
+    "message": "Ex : Rnsdc,ifpap."
+  },
+  "OptionsDigits": {
+    "message": "Inclure des chiffres"
+  },
+  "OptionsAlphaUppercase": {
+    "message": "Inclure majuscule"
+  },
+  "OptionsAlphaLowercase": {
+    "message": "Inclure minuscules"
+  },
+  "Optionsextra": {
+    "message": "Inclure des caractères spéciaux"
+  },
+  "OptionsLength": {
+    "message": "Longueur du mot de passe :"
+  },
+  "OptionsExcluded": {
+    "message": "Exclure les caractères suivants :"
+  },
+  "OptionsExcludedPlaceholder": {
+    "message": "Ex : ~#'"
+  },
+  "GeneratedPassword": {
+    "message": "Mot de passe généré :"
+  },
+  "Submit": {
+    "message": "Générer le mot de passe"
+  },
+  "AdviceLabel": {
+    "message": "Conseils de saisie"
+  },
+  "AdviceContainer": {
+    "message": ""
+  },
+  "OptionsLabel": {
+    "message": "Options"
+  }
+}

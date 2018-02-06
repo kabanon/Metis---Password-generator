@@ -1,0 +1,54 @@
+/**
+ *
+ */
+html, body {
+  width: 500px;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  background:#D9534F;
+  color:#fff;
+}
+
+#form-generated-password,
+#generate_submit,
+#form-excluded,
+#options_lenght,
+#form-passphrase {
+  width:100%;
+}
+#generated-password-label {
+  line-height: 2em;
+}
+
+#advice {
+  cursor: help;
+}
+#options {
+  cursor: pointer;
+}
+
+.container {
+  padding:4px
+}
+.hidden {
+  display: none;
+}
+
+/**
+ * Knacss override.
+ */
+.switch:checked {
+  -webkit-box-shadow: inset 2rem 0 0 #D9534F, inset 0 0 0 1px #D9534F;
+          box-shadow: inset 2rem 0 0 #D9534F, inset 0 0 0 1px #D9534F;
+}
+[type=color], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=submit], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
+  -webkit-box-shadow: 0 0 0 1px #ced4da inset;
+          box-shadow: 0 0 0 1px #ced4da inset;
+}
+input.btn,
+input {
+  border-radius: 3px;
+}

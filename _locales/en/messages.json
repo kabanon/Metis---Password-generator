@@ -1,0 +1,53 @@
+{
+  "extensionName": {
+    "message": "Metis (Μῆτις) password generator"
+  },
+  "extensionDescription": {
+    "message": "Metis (Μῆτις) password generator help you to have a unqiue password per website with a unique key."
+  },
+  "Title": {
+    "message": "Password generator"
+  },
+  "PassphraseLabel": {
+    "message": "Passphrase:"
+  },
+  "PassphraseLabelPlaceholder": {
+    "message": "Ex: Tb,ontb,titq:"
+  },
+  "OptionsDigits": {
+    "message": "Include digits"
+  },
+  "OptionsAlphaUppercase": {
+    "message": "Include uppercase"
+  },
+  "OptionsAlphaLowercase": {
+    "message": "Include lowercase"
+  },
+  "Optionsextra": {
+    "message": "Include special chars"
+  },
+  "OptionsLength": {
+    "message": "Password length:"
+  },
+  "OptionsExcluded": {
+    "message": "Excluded chars:"
+  },
+  "OptionsExcludedPlaceholder": {
+    "message": "Ex: ~#'"
+  },
+  "GeneratedPassword": {
+    "message": "Generated password:"
+  },
+  "Submit": {
+    "message": "Generate password"
+  },
+  "AdviceLabel": {
+    "message": "Advices"
+  },
+  "AdviceContainer": {
+    "message": ""
+  },
+  "OptionsLabel": {
+    "message": "Options"
+  }
+}

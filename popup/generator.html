@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/knacss.css" />
+    <link rel="stylesheet" href="../assets/css/generator.css"/>
+  </head>
+  <body>
+    <h1 id="i18n_title" class="txtcenter"></h1>
+    <form id="password-generator" class="container">
+      <section class="grid-2 has-gutter">
+        <div class="col-2">
+          <label id="i18n_passphrase_label"
+                 for="form-passphrase"></label>
+          <input id="form-passphrase"
+                 type="password"
+                 name="passphrase"
+                 value=""
+                 required="required"
+                 class="txtcenter"
+                 placeholder="" />
+        </div>
+        <div class="txtcenter">
+          <span id="advice" data-display="0">
+            <span id="advice_icon">+</span>
+            <span id="i18n_advice_label"></span>
+          </span>
+        </div>
+        <div class="txtcenter">
+          <span id="options" data-display="0">
+            <span id="options_icon">+</span>
+            <span id="i18n_options_label"></span>
+          </span>
+        </div>
+      </section>
+      <section id="advice_container" class="grid1 has-gutter hidden mts">
+          <div id="i18n_advice_container"></div>
+      </section>
+
+      <section id="options_container" class="grid-2 has-gutter hidden mts">
+          <div>
+            <label>
+              <input id="options_alpha_uppercase"
+                     type="checkbox"
+                     name="letters"
+                     value=""
+                     class="switch"
+                     checked="checked" />
+              <span id="i18n_options_alpha_uppercase"></span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input id="options_alpha_lowercase"
+                     type="checkbox"
+                     name="letters"
+                     value=""
+                     class="switch"
+                     checked="checked" />
+              <span id="i18n_options_alpha_lowercase"></span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input id="options_digit"
+                     type="checkbox"
+                     name="digits"
+                     value=""
+                     class="switch"
+                     checked="checked" />
+              <span id="i18n_options_digits"></span>
+            </label>
+          </div>
+          <div>
+              <label>
+                <input id="options_special"
+                       type="checkbox"
+                       name="extra"
+                       value=""
+                       class="switch"
+                       checked="checked" />
+                <span id="i18n_options_extra"></span>
+              </label>
+          </div>
+
+          <div>
+            <label for="form-lenght">
+              <span id="i18n_options_length"></span>
+            </label>
+            <input id="options_lenght"
+                   type="number"
+                   min="6"
+                   max="24"
+                   name="length"
+                   class="txtcenter"
+                   value="12" />
+          </div>
+          <div>
+            <label for="form-excluded">
+              <span id="i18n_options_excluded"></span>
+            </label>
+            <input id="form-excluded"
+                   type="text"
+                   name="excluded"
+                   value=""
+                   class="txtcenter"
+                   placeholder=""/>
+          </div>
+      </section>
+      <section class="grid-1 has-gutter">
+        <div class="mts">
+          <input class="btn btn--danger"
+                 id="generate_submit"
+                 type="submit"
+                 value="">
+        </div>
+      </section>
+      <section id="generated-password" class="grid-2 has-gutter hidden mts">
+        <div id="generated-password-label" class="txtright">
+          <label id="i18n_generated_password"
+                 for="form-passphrase"></label>
+        </div>
+        <div>
+          <input id="form-generated-password"
+                 type="text"
+                 name="passphrase"
+                 value=""
+                 class="txtcenter"
+                 placeholder="" />
+        </div>
+      </section>
+    </form>
+    <script src="../assets/js/sha512.min.js"></script>
+    <script src="../assets/js/codepointat.js"></script>
+    <script src="../assets/js/generator.js"></script>
+  </body>
+</html>
