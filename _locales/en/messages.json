@@ -36,16 +36,16 @@
     "message": "Ex: ~#'"
   },
   "GeneratedPassword": {
-    "message": "Generated password:"
+    "message": "Generated password for $URL$:",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
   },
   "Submit": {
     "message": "Generate password"
-  },
-  "AdviceLabel": {
-    "message": "Advices"
-  },
-  "AdviceContainer": {
-    "message": ""
   },
   "OptionsLabel": {
     "message": "Options"
