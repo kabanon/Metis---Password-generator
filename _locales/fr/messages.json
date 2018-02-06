@@ -3,7 +3,7 @@
     "message": "Metis (Μῆτις) - Générateur de mot de passe"
   },
   "extensionDescription": {
-    "message": "Metis (Μῆτις) est un générateur de mot de passe. Il vous permet a partir d'une clé unique d'avoir un mot de passe unique et sécurisé pour chaque site internet."
+    "message": "Metis (Μῆτις) est un générateur de mot de passe. Il vous permet à partir d'une clé unique d'avoir un mot de passe unique et sécurisé pour chaque site internet."
   },
   "Title": {
     "message": "Metis (Μῆτις)"
@@ -36,16 +36,16 @@
     "message": "Ex : ~#'"
   },
   "GeneratedPassword": {
-    "message": "Mot de passe généré :"
+    "message": "Mot de passe généré pour $URL$ :",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
   },
   "Submit": {
     "message": "Générer le mot de passe"
-  },
-  "AdviceLabel": {
-    "message": "Conseils de saisie"
-  },
-  "AdviceContainer": {
-    "message": ""
   },
   "OptionsLabel": {
     "message": "Options"

@@ -43,6 +43,17 @@ var password = {
       'encoded': '',
     };
     this.options = options;
+
+
+    //i18n_generated_password: 'GeneratedPassword',
+    let spani18n = document.createElement('span');
+    spani18n.setAttribute('id', 'generated_password_content');
+    spani18n.textContent = browser.i18n.getMessage('GeneratedPassword', url);
+
+    let container = document.getElementById('i18n_generated_password');
+    let old_content = document.getElementById('generated_password_content');
+    container.removeChild(old_content);
+    container.appendChild(spani18n);
   },
   /**
    *
@@ -201,14 +212,11 @@ var password = {
     i18n_options_alpha_lowercase: 'OptionsAlphaLowercase',
     i18n_options_length: 'OptionsLength',
     i18n_options_excluded: 'OptionsExcluded',
-    i18n_generated_password: 'GeneratedPassword',
-    i18n_advice_label: 'AdviceLabel',
-    i18n_advice_container: 'AdviceContainer',
     i18n_options_label: 'OptionsLabel',
   }
   const i18n_placeholder = {
-    browserActionPassphraseLabelPlaceholder: 'form-passphrase',
-    browserActionOptionsExcludedPlaceholder: 'form-excluded',
+    PassphraseLabelPlaceholder: 'form-passphrase',
+    OptionsExcludedPlaceholder: 'form-excluded',
   }
 
   let run_generator = function () {
@@ -278,18 +286,10 @@ var password = {
    */
   let tips = function(element) {
     if (document.getElementById(element).getAttribute('data-display') == '0') {
-      if (element == 'advice') {
-        tips_display('advice', true);
-        tips_display('options', false);
-      }
-      else {
-        tips_display('options', true);
-        tips_display('advice', false);
-      }
+      tips_display('options', true);
     }
     else {
       tips_display('options', false);
-      tips_display('advice', false);
     }
   };
 
@@ -300,12 +300,6 @@ var password = {
     function(event){
       event.preventDefault();
       run_generator();
-    },
-    false
-  );
-  document.getElementById('advice').addEventListener("click",
-    function(event){
-      tips('advice');
     },
     false
   );
