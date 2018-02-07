@@ -26,6 +26,6 @@
     "default_popup": "popup/generator.html"
   },
   "permissions": [
-    "tabs"
+    "activeTab"
   ]
 }
